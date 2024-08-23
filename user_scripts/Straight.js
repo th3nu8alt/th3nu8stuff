@@ -5,9 +5,7 @@ function NewBrick(XSize, YSize, ZSize, XPos, YPos, ZPos, Tras, Color) {
     Game.newBrick(brick) // "Parent" the brick to the game so players will download it.
 
 }
-
-new Tool("Straight")
-tool.model = 124
-tool.equipped((p) => {
-  p.NewBrick(1,1,1,player.position.x,player.position.y,player.position.z,1)
+const tool = new Tool("Straight")
+Game.on("initialSpawn",p=>{
+  p.addTool(tool)
 })
