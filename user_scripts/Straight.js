@@ -6,8 +6,8 @@ function NewBrick(XSize, YSize, ZSize, XPos, YPos, ZPos, Tras, Color) {
 
 }
 
-let tool = new Tool("Balloon")
+new Tool("Straight")
 tool.model = 124
 tool.equipped((p) => {
-  p.NewBrick(1,1,1,position x,position y,position z,1)
+  p.NewBrick(1,1,1,player.position.x,player.position.y,player.position.z,1)
 })
