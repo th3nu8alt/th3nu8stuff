@@ -1,7 +1,8 @@
-const tool = new Tool("Grass")
+const brickrick = world.bricks.find(brick => brick.name === 'brick')
+const tool = new Tool("test")
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
-  p.setJumpPower(3.99)
+  p.setJumpPower(4)
 })
 
 function roundTo(num,rnd) {
@@ -16,7 +17,6 @@ tool.on("activated",p=>{
     brick.clickable = true
 }) 
 brick.clicked((player, secure) => {
-  if (secure) {
-    brick.destroy()
-  }
+  if (!secure) return
+  brick.destroy()
 })
