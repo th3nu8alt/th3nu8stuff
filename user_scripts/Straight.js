@@ -10,6 +10,6 @@ tool.model = 655
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
 })
-tool.on("equipped",p=>{
+tool.on("activated",p=>{
   Game.newBrick(new Brick(p.position,new Vector3(1,1,1),"#000000"))
 })
