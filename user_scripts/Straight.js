@@ -10,4 +10,4 @@ Game.on("initialSpawn",p=>{
   p.addTool(tool)
 })
 Game.on("equiped",p=>{
-    NewBrick(1,1,1,player.position.x,player.position.y,player.position.z, 0.5))})
+    p.NewBrick(1,1,1,player.position.x,player.position.y,player.position.z, 0.5)})
