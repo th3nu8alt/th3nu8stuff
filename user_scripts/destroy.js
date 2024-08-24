@@ -3,9 +3,11 @@ const destroy = new Tool("Destroy")
 Game.on("initialSpawn",p=>{
     p.addTool(destroy)
   })
-
   tool.on("equipped",p=>{
     brick.clicked((player, secure) => {
-        if (!secure) return
-    })
+        if (!secure){
+          brick.destroy()
+        }
+      })
   })
+  
