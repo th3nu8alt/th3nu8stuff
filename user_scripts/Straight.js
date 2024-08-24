@@ -1,4 +1,8 @@
 active = 1
+const tool = new Tool("Straight")
+Game.on("initialSpawn",p=>{
+  p.addTool(tool)
+})
 function NewBrick(size,pos,trans,color) {
     let brick = new Brick(pos,size,color)
     brick.visibility = trans
@@ -12,10 +16,6 @@ function NewBrick(size,pos,trans,color) {
     if active = 0;
         LoopStraight
     }
-  const tool = new Tool("Straight")
-  Game.on("initialSpawn",p=>{
-    p.addTool(tool)
-  })
   
   tool.on("equipped",p=>{
     active=0
