@@ -16,7 +16,7 @@ tool.on("activated",p=>{
     brick.clickable = true
 }) 
 brick.clicked((player, secure) => {
-  if (!secure){
+  if (!secure) {
     brick.destroy()
   }
 })
