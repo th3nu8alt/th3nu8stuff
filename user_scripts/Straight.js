@@ -1,4 +1,4 @@
-active = 0
+active = 1
 function NewBrick(size,pos,trans,color) {
     let brick = new Brick(pos,size,color)
     brick.visibility = trans
@@ -18,6 +18,7 @@ function NewBrick(size,pos,trans,color) {
   })
   
   tool.on("equipped",p=>{
+    active=0
     LoopStraight()
   })
 
