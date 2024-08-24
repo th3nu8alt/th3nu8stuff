@@ -1,7 +1,7 @@
 const tool = new Tool("test")
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
-  setJumpPower(power 8)
+  player.setJumPower(8)
 })
 
 function roundTo(num,rnd) {
@@ -10,7 +10,7 @@ function roundTo(num,rnd) {
 
 
 tool.on("activated",p=>{
-    let brick = new Brick(p.position,new Vector3(4,4,4),"#000000")
+    let brick = new Brick(p.position,new Vector3(1,1,1),"#000000")
     Game.newBrick(brick)
-    brick.setPosition(new Vector3(roundTo(brick.position.x,4)-2, roundTo(brick.position.y,4)-2, roundTo(brick.position.z,4)-4))
+    brick.setPosition(new Vector3(roundTo(brick.position.x,8)-4, roundTo(brick.position.y,8)-4, roundTo(brick.position.z,8)))
 }) 
