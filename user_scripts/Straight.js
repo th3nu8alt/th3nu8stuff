@@ -13,9 +13,10 @@ function NewBrick(size,pos,trans,color) {
   function LoopStraight() {
     NewBrick(new Vector3(1,1,1),p.position,0.5,"#000000")
     destroy()
-    if active = 0;
-        LoopStraight
+    if(active == 0) {
+        LoopStraight()
     }
+  }
   
   tool.on("equipped",p=>{
     active=0
