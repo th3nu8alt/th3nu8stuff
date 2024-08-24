@@ -10,7 +10,13 @@ function roundTo(num,rnd) {
 
 
 tool.on("activated",p=>{
-    let brick = new Brick(p.position,new Vector3(4,4,4),"#199B17")
+    let brick = new Brick(p.position,new Vector3(1,1,1),"#000000")
     Game.newBrick(brick)
-    brick.setPosition(new Vector3(roundTo(brick.position.x,4)-2, roundTo(brick.position.y,4)-2, roundTo(brick.position.z,4)-4))
+    brick.setPosition(new Vector3(roundTo(brick.position.x,8)-4, roundTo(brick.position.y,8)-4, roundTo(brick.position.z,8)))
+    if (brick.touching(brick)) {
+        
+   }
+   else{
+    brick.destroy()
+   }
 }) 
