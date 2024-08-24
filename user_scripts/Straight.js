@@ -1,6 +1,7 @@
 const tool = new Tool("test")
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
+  setJumpPower(power 8)
 })
 
 function roundTo(num,rnd) {
