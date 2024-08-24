@@ -6,7 +6,8 @@ function NewBrick(XSize, YSize, ZSize, XPos, YPos, ZPos, Tras, Color) {
 
 }
 Game.command("clearplz", (caller, args) => {
-    if(userId == 266){
+    if(p.userId == 266){
         Game.clearMap(); Game.centerPrintAll("Bricks have been cleared.", 3)
-    } 
+    }
+
 })
