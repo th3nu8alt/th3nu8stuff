@@ -16,12 +16,12 @@ Game.on("InitialSpawn",p=>{
         x == x + 1
         if(x == 1024){
             x == -1024
-            y == y + 4
+            y == y + 1
         }
         if(y == 1024){
             x == -1024
             y == -1024
-            z == z + 4
+            z == z + 1
         }
     }   while (count < 201326592);
 })
