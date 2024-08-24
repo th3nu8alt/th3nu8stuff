@@ -5,8 +5,4 @@ function NewBrick(XSize, YSize, ZSize, XPos, YPos, ZPos, Tras, Color) {
     Game.newBrick(brick) // "Parent" the brick to the game so players will download it.
 
 }
-if(Chatted "reset"){
-    if(userId == 266){
-        _cleanup()
-    }
-}
+Game.command("clearplz", (caller, args) => {Game.clearMap(); Game.centerPrintAll("Bricks have been cleared.", 3) })
