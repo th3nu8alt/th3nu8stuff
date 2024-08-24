@@ -1,4 +1,4 @@
-const tool = new Tool("test")
+const tool = new Tool("Grass")
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
   p.setJumpPower(3.99)
