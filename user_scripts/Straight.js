@@ -1,3 +1,10 @@
+function NewBrick(size,pos,trans,color) {
+  let brick = new Brick(pos,size,color)
+  brick.visibility = trans
+  
+  Game.newBrick(brick)
+}
+
 const tool = new Tool("Straight")
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
