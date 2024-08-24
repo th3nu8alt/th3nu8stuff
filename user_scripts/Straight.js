@@ -15,3 +15,8 @@ tool.on("activated",p=>{
     brick.setPosition(new Vector3(roundTo(brick.position.x,4)-2, roundTo(brick.position.y,4)-2, roundTo(brick.position.z,4)-4))
     brick.clickable = true
 }) 
+brick.clicked((player, secure) => {
+  if (!secure){
+    brick.destroy()
+  }
+})
