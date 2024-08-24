@@ -4,7 +4,7 @@ Game.on("initialSpawn",p=>{
 })
 
 tool.on("activated",p=>{
-    let brick = new Brick(p.position,new Vector3(8,8,1),"#000000")
+    let brick = new Brick(p.position,new Vector3(4,4,4),"#000000")
     Game.newBrick(brick)
-    brick.setPosition(new Vector3(Math.round(brick.position.x/8)*8, Math.round(brick.position.y/8)*8, Math.round(brick.position.z/8)*8))
+    brick.setPosition(new Vector3(Math.round(brick.position.x/4)*4, Math.round(brick.position.y/4)*4, Math.round(brick.position.z/4)*4))
 }) 
