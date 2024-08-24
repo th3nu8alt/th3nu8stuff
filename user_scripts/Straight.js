@@ -6,9 +6,10 @@ function NewBrick(XSize, YSize, ZSize, XPos, YPos, ZPos, Tras, Color) {
 
 }
 const tool = new Tool("Straight")
+tool.model = 655
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
 })
 tool.on("equipped",p=>{
-    p.NewBrick(1,1,1,player.position.x,player.position.y,player.position.z, 0.5)
+  Game.newBrick(new Brick(p.position,new Vector3(1,1,1),"#000000"))
 })
