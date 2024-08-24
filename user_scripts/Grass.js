@@ -1,4 +1,4 @@
-const brickrick = world.bricks.find(brick => brick.name === 'brick')
+const brick = world.bricks.find(brick => brick.name === 'brick')
 const tool = new Tool("Grass")
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
