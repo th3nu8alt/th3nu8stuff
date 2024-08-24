@@ -9,6 +9,6 @@ const tool = new Tool("Straight")
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
 })
-Game.on("Equipped",p=>{
+Tool.on("Equipped",p=>{
     p.NewBrick(1,1,1,player.position.x,player.position.y,player.position.z, 0.5)
 })
