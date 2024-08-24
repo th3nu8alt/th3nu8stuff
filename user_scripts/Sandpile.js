@@ -5,4 +5,4 @@ function NewBrick(XSize, YSize, ZSize, XPos, YPos, ZPos, Tras) {
     Game.newBrick(brick) // "Parent" the brick to the game so players will download it.
 
 }
-console.log(NewBrick(1,1,1,1,1,1,1,));
+console.log(NewBrick(2,1,1,1,1,1,1,));
