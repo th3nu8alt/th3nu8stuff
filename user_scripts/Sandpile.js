@@ -5,4 +5,8 @@ function NewBrick(XSize, YSize, ZSize, XPos, YPos, ZPos, Tras, Color) {
     Game.newBrick(brick) // "Parent" the brick to the game so players will download it.
 
 }
-Game.command("clearplz", (caller, args) => {Game.clearMap(); Game.centerPrintAll("Bricks have been cleared.", 3) })
+Game.command("clearplz", (caller, args) => {
+    if(userId == 266){
+        Game.clearMap(); Game.centerPrintAll("Bricks have been cleared.", 3)
+    } 
+})
