@@ -1,7 +1,7 @@
 const tool = new Tool("test")
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
-  p.setJumpPower(3.5)
+  p.setJumpPower(3.9)
 })
 
 function roundTo(num,rnd) {
