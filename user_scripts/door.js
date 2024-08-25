@@ -1,4 +1,4 @@
-const tool = new Tool("test")
+const tool = new Tool("Door")
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
 })
