@@ -1,4 +1,5 @@
-const tool = new Tool("Glass")
+
+let tool = new Tool("Glass")
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
 })
