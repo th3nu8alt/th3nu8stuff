@@ -1,6 +1,6 @@
 Game.on("initialSpawn",(p)=>{
     p.setPosition(new Vector3(-4,-307,2))
-    if (player.ownsAsset(690)) {
+    if (p.ownsAsset(690)) {
         p.setPosition(new Vector3(0,0,0))
     }
 })
