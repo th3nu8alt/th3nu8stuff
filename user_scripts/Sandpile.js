@@ -1,4 +1,4 @@
-eGame.on("playerJoin", (p) => {
+Game.on("playerJoin", (p) => {
     if (!p.ownsAsset(690)) {
         p.kick("Buy the beta gamepass to join")
     }
