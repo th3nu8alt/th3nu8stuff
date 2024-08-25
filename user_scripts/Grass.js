@@ -1,8 +1,10 @@
 let brick = world.bricks.find(brick => brick.name === 'brick')
 let tool = new Tool("Grass")
 Game.on("initialSpawn",p=>{
-  p.addTool(tool)
-  p.setJumpPower(3.98)
+  p.setJumpPower(3.99)
+  if (player.ownsAsset(690)) {
+    p.addTool(tool)
+  }
 })
 
 function roundTo(num,rnd) {
