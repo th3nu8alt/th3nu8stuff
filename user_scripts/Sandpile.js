@@ -1,5 +1,7 @@
 Game.on("playerJoin", (p) => {
-    if (!p.ownsAsset(690)) {
+    if (p.ownsAsset(690)) {
+        return
+    } else {
         p.kick("Buy the beta gamepass to join")
     }
 })
