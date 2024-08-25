@@ -1,4 +1,4 @@
-let brick = world.bricks.filter(brick => brick.name === 'brick')
+let brick = world.bricks.find(brick => brick.name === 'brick')
 let tool = new Tool("Stone")
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
@@ -14,7 +14,3 @@ tool.on("activated",p=>{
     brick.setPosition(new Vector3(roundTo(brick.position.x,4)-2, roundTo(brick.position.y,4)-2, roundTo(brick.position.z,4)-4))
     brick.clickable = true
 })  
-brick.clicked((player, secure) => {
-  if (!secure) return
-  brick.destroy()
-})
