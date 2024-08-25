@@ -1,4 +1,5 @@
 Game.on("initialSpawn", (p) => {
+    console.log(p.ownsAsset(690))
     if (p.ownsAsset(690)) {
         return
     } else {
