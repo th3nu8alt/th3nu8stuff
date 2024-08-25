@@ -1,4 +1,4 @@
-Game.on("playerJoin", (p) => {
+Game.on("initialSpawn", (p) => {
     if (p.ownsAsset(690)) {
         return
     } else {
