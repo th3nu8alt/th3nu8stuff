@@ -1,7 +1,7 @@
 let brick = world.bricks.find(brick => brick.name === 'brick')
 let tool = new Tool("Glass")
 Game.on("initialSpawn",p=>{
-  if (player.ownsAsset(690)) {
+  if (p.ownsAsset(690)) {
     p.addTool(tool)
   }
 })
