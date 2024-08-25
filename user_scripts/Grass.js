@@ -2,7 +2,7 @@ let brick = world.bricks.find(brick => brick.name === 'brick')
 let tool = new Tool("Grass")
 Game.on("initialSpawn",p=>{
   p.setJumpPower(3.99)
-  if (player.ownsAsset(690)) {
+  if (p.ownsAsset(690)) {
     p.addTool(tool)
   }
 })
