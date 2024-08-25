@@ -1,7 +1,7 @@
 Game.on("initialSpawn",p=>{
-    p.setPosition(Vector3(-4,-307,2))
-    if(player.ownsAsset(690)) {
-        p.setPosition(Vector3(0,0,0))
+    setPosition(Vector3(-4,-307,2))
+    if(p.ownsAsset(690)) {
+        setPosition(Vector3(0,0,0))
     }
 })
 function NewBrick(XSize, YSize, ZSize, XPos, YPos, ZPos, Tras, Color) {
