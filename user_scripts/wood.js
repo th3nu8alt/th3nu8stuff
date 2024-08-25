@@ -12,4 +12,5 @@ tool.on("activated",p=>{
     Game.newBrick(brick)
     brick.setPosition(new Vector3(roundTo(brick.position.x,4)-2, roundTo(brick.position.y,4)-2, roundTo(brick.position.z,4)-4))
     brick.clickable = true
+    brick.model = 694
 }) 
