@@ -13,5 +13,4 @@ tool.on("activated",p=>{
     brick.setPosition(new Vector3(roundTo(brick.position.x,4)-2, roundTo(brick.position.y,4)-2, roundTo(brick.position.z,4)))
     brick.clickable = true
     brick.collision = false
-    brick.model = 694
 }) 
