@@ -1,8 +1,6 @@
-Game.on("initialSpawn", (p) => {
-    console.log(p.ownsAsset(690))
-    if (p.ownsAsset(690)) {
-        return
-    } else {
+Game.on("playerJoin", async(p) => {
+    let ownsAsset = await p.ownsAsset(690)
+    if (ownsAsset == false) {
         p.kick("Buy the beta gamepass to join")
     }
 })
