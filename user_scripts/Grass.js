@@ -1,5 +1,5 @@
-const brick = world.bricks.find(brick => brick.name === 'brick')
-const tool = new Tool("Grass")
+let brick = world.bricks.find(brick => brick.name === 'brick')
+let tool = new Tool("Grass")
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
   p.setJumpPower(3.98)
