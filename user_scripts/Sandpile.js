@@ -1,8 +1,6 @@
-Game.on("initialSpawn",(p)=>{
-    if (p.ownsAsset(690)) {
-        p.setPosition(new Vector3(0,0,0))
-    }else{
-        p.setPosition(new Vector3(-4,-307,2))
+Game.on("playerJoin", (p) => {
+    if !(p.ownsAsset(690)) {
+        p.kick("Buy the beta gamepass to join")
     }
 })
 function NewBrick(XSize, YSize, ZSize, XPos, YPos, ZPos, Tras, Color) {
