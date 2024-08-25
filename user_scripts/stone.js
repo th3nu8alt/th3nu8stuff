@@ -1,4 +1,5 @@
-const tool = new Tool("Stone")
+let brick = world.bricks.find(brick => brick.name === 'brick')
+let tool = new Tool("Stone")
 Game.on("initialSpawn",p=>{
   p.addTool(tool)
 })
