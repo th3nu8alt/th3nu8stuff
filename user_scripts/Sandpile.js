@@ -8,3 +8,7 @@ function NewBrick(XSize, YSize, ZSize, XPos, YPos, ZPos, Tras, Color) {
 Game.command("clearplz", (caller, args) => {
     Game.clearMap(); Game.centerPrintAll("Bricks have been cleared.", 3)
 })
+p.setPosition(Vector3(-4,-307,2))
+if(player.ownsAsset(690)) {
+    p.setPosition(Vector3(0,0,0))
+}
