@@ -1,7 +1,7 @@
 const nh = require('node-hill-s')
 
 nh.startServer({
-    hostKey: "HJCOzLZKjs4DmK17qbwzDhirgsrlmqbSnUFkPmw2hj8VgmXks7lJh1eQ9YSTy3ke", // Your host key here (can be found under the settings of the set.)
+    hostKey: "n9u6qenFm1gSbR0gE0znnaTW2CtC6TKML485PpahtVia4HgCPbIX99eLeTEiqOS8", // Your host key here (can be found under the settings of the set.)
 
     gameId: 92, // Your game id here
 
