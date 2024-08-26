@@ -3,7 +3,7 @@ const nh = require('node-hill-s')
 nh.startServer({
     hostKey: "HJCOzLZKjs4DmK17qbwzDhirgsrlmqbSnUFkPmw2hj8VgmXks7lJh1eQ9YSTy3ke", // Your host key here (can be found under the settings of the set.)
 
-    gameId: 237, // Your game id here
+    gameId: 92, // Your game id here
 
     port: 42480, // Your port id here (default is 42480)
 
